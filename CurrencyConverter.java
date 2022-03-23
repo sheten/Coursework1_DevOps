@@ -11,7 +11,7 @@ public class CurrencyConverter {
 
                 Scanner sc = new Scanner(System.in);
 
-                System.out.println("Welcome to the Currency Converter!");
+                System.out.println("Welcome Back to the Currency Converter!");
 
                 System.out.println("Which currency do you want to convert? ");
                 System.out.println("1:Dollars \t2:Pounds \t3:Euros");
