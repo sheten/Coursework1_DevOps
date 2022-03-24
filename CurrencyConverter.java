@@ -3,22 +3,20 @@ import java.text.DecimalFormat;
 
 public class CurrencyConverter {
 
-        public static void main(String[] args) {
+        public static void main(Number[] args) {
 
                 double amount, dollar, pound, code, euro;
 
                 DecimalFormat f = new DecimalFormat("##.##");
 
-                Scanner sc = new Scanner(System.in);
+                System.out.println("Welcome to the Currency Converter!");
 
-                System.out.println("Welcome Back to the Currency Converter!");
-
-                System.out.println("Which currency do you want to convert? ");
-                System.out.println("1:Dollars \t2:Pounds \t3:Euros");
-                code = sc.nextInt();
-
-                System.out.println("How much money do you want to convert?");
-                amount = sc.nextFloat();
+                System.out.println("Write two arguments:");
+		System.out.println("First, write number 1/2/3 to choose currency to convert");
+		System.out.println("1:Dollars \t2:Pounds \t3:Euros");
+		System.out.println("Second, write the amount you want to convert");
+                code = args[0];
+                amount = args[1];
 
                 // For amounts Conversion
                 if (code == 1) {
