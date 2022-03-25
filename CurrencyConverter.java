@@ -52,7 +52,7 @@ public class CurrencyConverter {
                 } else if (code == 3) {
                         // For Euro Conversion
                         dollar = amount * 1.13;
-                        System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars ");
+                        System.out.println(amount + " Euros = " + f.format(dollar) + " Dollars");
 
                         pound = amount * 0.84;
                         System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
