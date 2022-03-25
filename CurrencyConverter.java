@@ -11,7 +11,7 @@ public class CurrencyConverter {
                 DecimalFormat f = new DecimalFormat("##.##");
 
 		if(args.length == 1) {
-			System.out.println("You have missed to insert two arguments, system requires two arguments: 1st - choose currency 2nd - insert amount to convert. Please re-run the converter and insert both values");
+			System.out.println("You have missed to insert two arguments, system requires two arguments: 1st - choose currency 2nd - insert amount to convert. Please re-run the converter and insert both values ");
 }
                 try 
                 { 
