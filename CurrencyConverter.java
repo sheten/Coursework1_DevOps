@@ -9,7 +9,7 @@ public class CurrencyConverter {
                 double amount, dollar, pound, code, euro;
 
                 DecimalFormat f = new DecimalFormat("##.##");
-		//Adding code to detect if both arguments was passed and none was missed 
+		//Adding code to detect if both arguments was passed and none was missed
 		if(args.length == 0) {
 
     throw new IllegalArgumentException("In order to succeed the convertion, you need to pass both arguments. Right now you did pass just 1 or even none. Pleae re-run the converter and pass both: Currency and Amount choosing inputs");
