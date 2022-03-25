@@ -14,7 +14,7 @@ public class CurrencyConverter {
 			System.out.println("You have missed to insert two arguments, system requires two arguments: 1st - choose currency 2nd - insert amount to convert. Please re-run the converter and insert both values");
 		}
 
-		//Adding code to check if numbers was passed, not strings or other elements
+		//Adding code to check if numbers was passed, not strings or other elements 
                 try 
                 { 
                         Double.parseDouble(args[0]); 
