@@ -38,7 +38,7 @@ public class CurrencyConverter {
                 if (code == 1) {
                         // For Dollar Conversion
                         pound = amount * 0.74;
-                        System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds");
+                        System.out.println(amount + " Dollars = " + f.format(pound) + " Pounds ");
 
                         euro = amount * 0.88;
                         System.out.println(amount + " Dollars = " + f.format(euro) + " Euros");
