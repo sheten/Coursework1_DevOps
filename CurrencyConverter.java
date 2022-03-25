@@ -3,20 +3,34 @@ import java.text.DecimalFormat;
 
 public class CurrencyConverter {
 
-        public static void main(Number[] args) {
+        public main(String[] args) {
 
                 double amount, dollar, pound, code, euro;
 
                 DecimalFormat f = new DecimalFormat("##.##");
+		
 
-                System.out.println("Welcome to the Currency Converter!");
+		try 
+		{ 
+			Double.parseDouble(args[0]); 
+		}  
+		catch (NumberFormatException e)  
+		{ 
+			System.out.println(args[0] + " is not a valid input, the system accepts only number or double."); 
+		} 
 
-                System.out.println("Write two arguments:");
-		System.out.println("First, write number 1/2/3 to choose currency to convert");
-		System.out.println("1:Dollars \t2:Pounds \t3:Euros");
-		System.out.println("Second, write the amount you want to convert");
-                code = args[0];
-                amount = args[1];
+		try 
+                { 
+                        Double.parseDouble(args[1]); 
+                }  
+                catch (NumberFormatException e)  
+                { 
+                        System.out.println(args[1] + " is not a valid input, the system accepts only number or double."); 
+                } 
+
+
+                code = Double.parseDouble(args[0]);
+                amount = Double.parseDouble(args[1]);
 
                 // For amounts Conversion
                 if (code == 1) {
@@ -43,10 +57,10 @@ public class CurrencyConverter {
                         pound = amount * 0.84;
                         System.out.println(amount + " Euros = " + f.format(pound) + " Pounds");
 
+
                 }
-
-                System.out.println("Thank you for using the converter.");
+	return code;
         }
-
+	
 }
 
